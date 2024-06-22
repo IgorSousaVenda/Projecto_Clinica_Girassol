@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.MenuControlador">
+   <children>
+      <BorderPane fx:id="BorderPane" onDragDetected="#BorderPane" prefHeight="200.0" prefWidth="200.0" styleClass="righ-form" stylesheets="@LoginDesign.css">
+         <left>
+            <AnchorPane prefHeight="691.0" prefWidth="244.0" styleClass="let-form" stylesheets="@LoginDesign.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="226.0" fitWidth="233.0" layoutX="7.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/Logo_4-removebg.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnAgenda" layoutX="28.0" layoutY="306.0" mnemonicParsing="false" onAction="#Agenda" prefHeight="43.0" prefWidth="187.0" styleClass="login-btn" stylesheets="@LoginDesign.css" text="Agenda" />
+                  <Button fx:id="btnPaciente" layoutX="28.0" layoutY="363.0" mnemonicParsing="false" onAction="#Paciente" prefHeight="43.0" prefWidth="187.0" styleClass="login-btn" stylesheets="@LoginDesign.css" text="Pacientes" />
+                  <Button fx:id="btnProfissionais" layoutX="28.0" layoutY="424.0" mnemonicParsing="false" onAction="#Profissionais" prefHeight="43.0" prefWidth="187.0" styleClass="login-btn" stylesheets="@LoginDesign.css" text="Profissionais" />
+                  <Button fx:id="btnSair" layoutX="28.0" layoutY="484.0" mnemonicParsing="false" onAction="#Sair" prefHeight="43.0" prefWidth="187.0" styleClass="login-btn" stylesheets="@LoginDesign.css" text="Sair" />
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane fx:id="entretelas" onDragDetected="#Centro" prefHeight="43.0" prefWidth="1250.0" styleClass="let-form" stylesheets="@LoginDesign.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1220.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/fechar.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="bntClose" layoutX="1209.0" layoutY="6.0" mnemonicParsing="false" onAction="#Close" prefHeight="25.0" prefWidth="41.0" styleClass="close" stylesheets="@LoginDesign.css" />
+               </children></AnchorPane>
+         </top>
+         <right>
+            <VBox prefHeight="656.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="658.0" fitWidth="1042.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imagens/R.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

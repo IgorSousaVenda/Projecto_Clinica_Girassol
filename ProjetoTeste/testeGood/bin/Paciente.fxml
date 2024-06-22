@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutY="3.0" prefHeight="500.0" prefWidth="200.0" styleClass="let-form" stylesheets="@LoginDesign.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="25.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/Logo_4-removebg.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="12.0" layoutY="206.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" styleClass="login-btn" text="Agenda" />
+                  <Button layoutX="13.0" layoutY="250.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" styleClass="login-btn" text="Pacientes" />
+                  <Button layoutX="12.0" layoutY="294.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" styleClass="login-btn" text="Profissionais" />
+                  <Button layoutX="12.0" layoutY="341.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" styleClass="login-btn" text="Sair" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="200.0" layoutY="5.0" prefHeight="500.0" prefWidth="500.0" styleClass="righ-form" stylesheets="@LoginDesign.css">
+               <children>
+                  <AnchorPane layoutY="-6.0" prefHeight="40.0" prefWidth="500.0" styleClass="let-form" stylesheets="@LoginDesign.css">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="466.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagens/fechar.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagens/botao-home.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="41.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagens/seta-direita.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="58.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagens/dentista.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="88.0" layoutY="11.0" text="Pacientes" textFill="#f6f6f6" />
+                        <Button layoutX="56.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                        <Button layoutX="12.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="22.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                        <Button layoutX="457.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="22.0" styleClass="close" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="9.0" layoutY="122.0" prefHeight="20.0" prefWidth="48.0" style="-fx-background-color: #efe4e4;" styleClass="textfield" text="   ID" />
+                  <TextField layoutX="250.0" layoutY="59.0" prefHeight="25.0" prefWidth="162.0" promptText="Pesquisar" styleClass="textfield" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/adicionar-botao.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="87.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/caneta.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="146.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/remover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="422.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/pesquisa.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="56.0" layoutY="122.0" prefHeight="20.0" prefWidth="83.0" style="-fx-background-color: #efe4e4;" styleClass="textfield" text="       Nome" />
+                  <Label layoutX="139.0" layoutY="122.0" prefHeight="20.0" prefWidth="91.0" style="-fx-background-color: #efe4e4;" styleClass="textfield" text="          BI" />
+                  <Label layoutX="231.0" layoutY="122.0" prefHeight="20.0" prefWidth="83.0" style="-fx-background-color: #efe4e4;" styleClass="textfield" text="    Endereço" />
+                  <Label layoutX="316.0" layoutY="122.0" prefHeight="20.0" prefWidth="83.0" style="-fx-background-color: #efe4e4;" styleClass="textfield" text=" Nascimento" />
+                  <Label layoutX="400.0" layoutY="122.0" prefHeight="20.0" prefWidth="83.0" style="-fx-background-color: #efe4e4;" styleClass="textfield" text="   Telefone" />
+                  <Label layoutX="34.0" layoutY="88.0" text="Add" />
+                  <Label layoutX="91.0" layoutY="88.0" text="Edit" />
+                  <Label layoutX="143.0" layoutY="88.0" text="Remov" />
+                  <Button layoutX="25.0" layoutY="46.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="37.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                  <Button layoutX="83.0" layoutY="54.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="37.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                  <Button layoutX="142.0" layoutY="58.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="37.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                  <Button layoutX="423.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

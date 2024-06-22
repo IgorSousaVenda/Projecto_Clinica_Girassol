@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#Pane" prefHeight="660.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TesteTelaControlador">
+   <top>
+      <AnchorPane prefHeight="51.0" prefWidth="1250.0" styleClass="let-form" stylesheets="@LoginDesign.css" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <AnchorPane fx:id="bdrCenter" onDragDetected="#Centro" prefHeight="601.0" prefWidth="326.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="-51.0" prefHeight="660.0" prefWidth="326.0" styleClass="let-form" stylesheets="@LoginDesign.css">
+               <children>
+                  <Button fx:id="bntEntrar" mnemonicParsing="false" onAction="#Entrar" prefHeight="193.0" prefWidth="306.0" styleClass="login-btn" stylesheets="@LoginDesign.css" text="Entrar " />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="entretelas" onDragDetected="#Centro" prefHeight="200.0" prefWidth="200.0" styleClass="righ-form" stylesheets="@LoginDesign.css" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

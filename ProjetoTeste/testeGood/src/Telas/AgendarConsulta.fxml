@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.AgendarConsultaControlador">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="450.0" prefWidth="500.0" styleClass="let-form" stylesheets="@LoginDesign.css">
+               <children>
+                  <AnchorPane layoutX="11.0" layoutY="34.0" prefHeight="401.0" prefWidth="476.0" styleClass="righ-form" stylesheets="@LoginDesign.css">
+                     <children>
+                        <Label layoutX="20.0" layoutY="14.0" prefHeight="25.0" prefWidth="428.0" style="-fx-background-color: #f4f4f4;" styleClass="textfield" text="                                 Agendamento de Consultas" textFill="#100f0f" />
+                        <TextField fx:id="txtPaciente" layoutX="149.0" layoutY="82.0" onAction="#Paciente" prefHeight="34.0" prefWidth="244.0" styleClass="textfield" />
+                        <ComboBox fx:id="cbbxEspecialidade" layoutX="149.0" layoutY="194.0" onAction="#Especialidade" prefHeight="34.0" prefWidth="244.0" style="-fx-background-color: #f4f4f4;" styleClass="textfield" />
+                        <TextField fx:id="txtProfissional" layoutX="149.0" layoutY="139.0" onAction="#Profissional" prefHeight="34.0" prefWidth="244.0" styleClass="textfield" />
+                        <Label layoutX="14.0" layoutY="87.0" text="*   Paciente">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="144.0" text="*   Profissional">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="199.0" text="*   Especialidade">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cbbxData" layoutX="149.0" layoutY="265.0" onAction="#Data" prefHeight="34.0" prefWidth="95.0" promptText="Data" style="-fx-background-color: #f4f4f4;" styleClass="textfield" />
+                        <ComboBox fx:id="cbbxHora" layoutX="297.0" layoutY="265.0" onAction="#Hora" prefHeight="34.0" prefWidth="95.0" promptText="Hora" style="-fx-background-color: #f4f4f4;" styleClass="textfield" />
+                        <Button fx:id="btnSalvar" layoutX="149.0" layoutY="332.0" mnemonicParsing="false" onAction="#Salvar" prefHeight="34.0" prefWidth="115.0" styleClass="login-btn" text="Salvar" />
+                        <Button fx:id="btnCancelar" layoutX="277.0" layoutY="332.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: #ff0909;" styleClass="login-btn" text="Cancelar" />
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="466.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/fechar.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="BtnClose" layoutX="464.0" layoutY="1.0" mnemonicParsing="false" onAction="#Close" prefHeight="12.0" prefWidth="24.0" styleClass="close" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

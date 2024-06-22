@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1403.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.AgendaControlador">
+   <children>
+      <AnchorPane prefHeight="7.0" prefWidth="6.0" StackPane.alignment="TOP_LEFT" />
+      <AnchorPane prefHeight="705.0" prefWidth="755.0" styleClass="righ-form" stylesheets="@LoginDesign.css">
+         <children>
+            <AnchorPane prefHeight="51.0" prefWidth="1084.0" styleClass="let-form" stylesheets="@LoginDesign.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/botao-home.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="11.0" fitWidth="17.0" layoutX="42.0" layoutY="16.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@imagens/seta-direita.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="66.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/agendar.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="93.0" layoutY="12.0" text="Agenda" textFill="WHITE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1026.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/fechar.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="11.0" layoutY="6.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                  <Button layoutX="64.0" layoutY="6.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                  <Button layoutX="1019.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="close" text="Button" />
+               </children>
+            </AnchorPane>
+            <TextField layoutX="268.0" layoutY="57.0" promptText="pesquisar" styleClass="textfield" />
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="438.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/pesquisa.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="304.0" layoutY="114.0" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: #e2e2e2 #e9c6c6;" styleClass="textfield" text="    ID" />
+            <Label layoutX="354.0" layoutY="114.0" prefHeight="20.0" prefWidth="93.0" style="-fx-background-color: #e2e2e2 #e9c6c6;" styleClass="textfield" text="       Nome" textAlignment="CENTER" />
+            <Label layoutX="447.0" layoutY="114.0" prefHeight="20.0" prefWidth="93.0" style="-fx-background-color: #e2e2e2 #e9c6c6;" styleClass="textfield" text="          BI" />
+            <Label layoutX="540.0" layoutY="114.0" prefHeight="20.0" prefWidth="93.0" style="-fx-background-color: #e2e2e2 #e9c6c6;" styleClass="textfield" text="    Endereço" />
+            <Label layoutX="633.0" layoutY="114.0" prefHeight="20.0" prefWidth="93.0" style="-fx-background-color: #e2e2e2 #e9c6c6;" styleClass="textfield" text="  Nascimento" />
+            <Label layoutX="724.0" layoutY="114.0" prefHeight="20.0" prefWidth="71.0" style="-fx-background-color: #e2e2e2 #e9c6c6;" styleClass="textfield" text="  Telefone" />
+            <Button layoutX="436.0" layoutY="57.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="17.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="21.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/adicionar-botao.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="74.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/caneta.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="128.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/remover.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="85.0" text="Add" />
+            <Label layoutX="78.0" layoutY="85.0" text="Edit" />
+            <Label layoutX="125.0" layoutY="85.0" text="Remov" />
+            <Button fx:id="btnAdd" layoutX="20.0" layoutY="53.0" mnemonicParsing="false" onAction="#Adicionar" prefHeight="49.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <Button layoutX="72.0" layoutY="53.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <Button layoutX="127.0" layoutY="53.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
