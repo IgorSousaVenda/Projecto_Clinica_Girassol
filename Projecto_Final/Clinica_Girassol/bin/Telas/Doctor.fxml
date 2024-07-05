@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1403.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.DoctorControlador">
+   <children>
+      <AnchorPane prefHeight="7.0" prefWidth="6.0" StackPane.alignment="TOP_LEFT" />
+      <AnchorPane prefHeight="705.0" prefWidth="755.0" styleClass="righ-form" stylesheets="@LoginDesign.css">
+         <children>
+            <AnchorPane prefHeight="49.0" prefWidth="1409.0" styleClass="let-form" stylesheets="@LoginDesign.css">
+               <children>
+                  <Label layoutX="663.0" layoutY="6.0" text="Medico" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1307.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/fechar.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="1269.0" layoutY="20.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imagens/quadrado.png" />
+                     </image>
+                  </ImageView>
+                 
+                  <Button layoutX="1262.0" layoutY="16.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                  <Button fx:id="btnVoltarMenu" layoutX="81.0" layoutY="11.0" mnemonicParsing="false" onAction="#VoltarMenu" styleClass="login-btn" stylesheets="@Menu.css" text="Voltar" />
+                  <Button fx:id="btnHistoricoConsultas" layoutX="155.0" layoutY="11.0" mnemonicParsing="false" styleClass="login-btn" stylesheets="@Menu.css" text="Historico Consulta" />
+               </children>
+            </AnchorPane>
+            <TextField layoutX="830.0" layoutY="65.0" promptText="pesquisar" styleClass="textfield" />
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="1000.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/pesquisa.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bntPesquisar" layoutX="998.0" layoutY="65.0" mnemonicParsing="false" onAction="#Pesquisar" prefHeight="25.0" prefWidth="17.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="1085.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/adicionar-botao.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="1138.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/caneta.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="1192.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/remover.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1089.0" layoutY="85.0" text="Add" />
+            <Label layoutX="1142.0" layoutY="85.0" text="Edit" />
+            <Label layoutX="1189.0" layoutY="85.0" text="Remov" />
+            <Button fx:id="btnAdd" layoutX="1084.0" layoutY="53.0" mnemonicParsing="false" onAction="#Adicionar" prefHeight="49.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <Button fx:id="BntEdit" layoutX="1136.0" layoutY="53.0" mnemonicParsing="false" onAction="#Editar" prefHeight="49.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <Button layoutX="1191.0" layoutY="172.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <AnchorPane layoutX="80.0" layoutY="121.0" prefHeight="389.0" prefWidth="442.0" stylesheets="@Menu.css">
+               <children>
+                  <AnchorPane layoutX="-27.0" layoutY="-42.0" prefHeight="559.0" prefWidth="447.0" stylesheets="@LoginDesign.css">
+                     <children>
+                        <TextField layoutX="40.0" layoutY="250.0" prefHeight="115.0" prefWidth="367.0" promptText="Prescrição Completa" styleClass="textfield" />
+                        <ComboBox fx:id="cbbxEspecialidade" layoutX="22.0" layoutY="162.0" prefHeight="34.0" prefWidth="273.0" promptText="Especialidade" style="-fx-background-color: #f4f4f4;" styleClass="textfield" />
+                        <Button fx:id="marcar" layoutX="168.0" layoutY="459.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="115.0" styleClass="login-btn" text="Marcar" />
+                        <Button fx:id="btnCancelar" layoutX="311.0" layoutY="459.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: #ff0909;" styleClass="login-btn" text="Cancelar" />
+                        <ImageView fitHeight="115.0" fitWidth="123.0" layoutX="22.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/Logo_4-removebg.png" />
+                           </image>
+                        </ImageView>
+                        <TextField layoutX="320.0" layoutY="74.0" prefHeight="34.0" prefWidth="115.0" promptText="ID Paciente" styleClass="textfield" />
+                        <Label layoutX="17.0" layoutY="31.0" prefHeight="25.0" prefWidth="428.0" style="-fx-background-color: #f4f4f4;" styleClass="textfield" text="                                   Prescrição Medica" textFill="#100f0f" />
+                        <TextField layoutX="320.0" layoutY="117.0" prefHeight="34.0" prefWidth="115.0" promptText="ID Consulta" styleClass="textfield" />
+                        <AnchorPane layoutX="42.0" layoutY="227.0" prefHeight="3.0" prefWidth="367.0" styleClass="textfield" stylesheets="@Menu.css" />
+                        <ComboBox fx:id="checkMedico" layoutX="22.0" layoutY="117.0" prefHeight="34.0" prefWidth="273.0" promptText="Medico" style="-fx-background-color: #f4f4f4;" styleClass="textfield" />
+                        <DatePicker layoutX="42.0" layoutY="381.0" prefHeight="24.0" prefWidth="157.0" promptText="data da consulta" />
+                        <ComboBox layoutX="320.0" layoutY="162.0" prefHeight="34.0" prefWidth="115.0" promptText="Estado" />
+                        <ComboBox fx:id="chechPaciente" layoutX="22.0" layoutY="74.0" prefHeight="34.0" prefWidth="273.0" promptText="Nome Paciente" style="-fx-background-color: #f4f4f4;" styleClass="textfield" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="righ-form" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnRemov" layoutX="1188.0" layoutY="55.0" mnemonicParsing="false" onAction="#Remover" prefHeight="30.0" prefWidth="37.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <TableView fx:id="tabelaConsulta" layoutX="520.0" layoutY="191.0" prefHeight="394.0" prefWidth="819.0" styleClass="textfield" stylesheets="@Menu.css">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="45.33331298828125" text="ID" />
+                  <TableColumn fx:id="nomePaciente" prefWidth="140.0" text="Nome Paciente" />
+                  <TableColumn fx:id="especialidade" prefWidth="144.00006103515625" text="Especialidade" />
+                  <TableColumn fx:id="dataConsulta" prefWidth="254.6666259765625" text="Data" />
+                  <TableColumn fx:id="estado" prefWidth="234.0" text="Estado" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="6.0" layoutY="665.0" prefHeight="49.0" prefWidth="1409.0" styleClass="let-form" stylesheets="@LoginDesign.css" />
+            <Label layoutX="735.0" layoutY="146.0" prefHeight="25.0" prefWidth="428.0" style="-fx-background-color: #f4f4f4;" styleClass="textfield" text="                                               Consultas " textFill="#100f0f" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

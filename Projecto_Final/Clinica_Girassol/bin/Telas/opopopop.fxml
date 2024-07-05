@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1403.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.ProfissionalControlador">
+   <children>
+      <AnchorPane prefHeight="7.0" prefWidth="6.0" StackPane.alignment="TOP_LEFT" />
+      <AnchorPane prefHeight="705.0" prefWidth="755.0" styleClass="righ-form" stylesheets="@LoginDesign.css">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="1409.0" styleClass="let-form" stylesheets="@LoginDesign.css">
+               <children>
+                  <Label layoutX="743.0" layoutY="8.0" text="PROFISSIONAIS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1307.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/fechar.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="1269.0" layoutY="20.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imagens/quadrado.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnClose" layoutX="1305.0" layoutY="16.0" mnemonicParsing="false" onAction="#Close" prefHeight="27.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                  <Button layoutX="1262.0" layoutY="16.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                  <Button fx:id="btnVoltarMenu11" layoutX="80.0" layoutY="9.0" mnemonicParsing="false" onAction="#VoltarMenu" styleClass="login-btn" stylesheets="@Menu.css" text="Voltar" />
+               </children>
+            </AnchorPane>
+            <TextField fx:id="txtPesquisa" layoutX="830.0" layoutY="65.0" promptText="pesquisar" styleClass="textfield" />
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="1000.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/pesquisa.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bntPesquisar" layoutX="998.0" layoutY="65.0" mnemonicParsing="false" onAction="#Pesquisar" prefHeight="25.0" prefWidth="17.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="1085.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/adicionar-botao.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="1138.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/caneta.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="1192.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/remover.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1089.0" layoutY="85.0" text="Add" />
+            <Label layoutX="1142.0" layoutY="85.0" text="Edit" />
+            <Label layoutX="1189.0" layoutY="85.0" text="Remov" />
+            <Button fx:id="btnAdd" layoutX="1084.0" layoutY="53.0" mnemonicParsing="false" onAction="#Adicionar" prefHeight="49.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <Button layoutX="1191.0" layoutY="172.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="31.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <AnchorPane layoutX="80.0" layoutY="121.0" prefHeight="389.0" prefWidth="442.0">
+               <children>
+                  <StackPane layoutX="-20.0" layoutY="-6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <StackPane layoutX="141.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane layoutX="-70.0" layoutY="72.0" prefHeight="522.0" prefWidth="356.0" styleClass="textfield" stylesheets="@Menu.css">
+                                             <children>
+                                                <Label layoutX="15.0" layoutY="14.0" prefHeight="28.0" prefWidth="441.0" style="-fx-background-color: #e2dfdf;" styleClass="textfield" stylesheets="@../LoginDesign.css" text="                                      Cadastro de Profissionais" />
+                                                <ImageView fitHeight="142.0" fitWidth="144.0" layoutX="15.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../imagens/reconhecimento-facial.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <TextField fx:id="TxtNome" layoutX="176.0" layoutY="90.0" prefHeight="28.0" prefWidth="280.0" promptText="Nome" styleClass="textfield" />
+                                                <TextField fx:id="txtBi" layoutX="176.0" layoutY="137.0" prefHeight="28.0" prefWidth="280.0" promptText="BI" styleClass="textfield" />
+                                                <TextField fx:id="txtNascimento" layoutX="176.0" layoutY="188.0" prefHeight="28.0" prefWidth="280.0" promptText="Nascimento" styleClass="textfield" />
+                                                <TextField fx:id="txtTelefone" layoutX="176.0" layoutY="242.0" prefHeight="28.0" prefWidth="280.0" promptText="Telefone" styleClass="textfield" />
+                                                <TextField fx:id="txtHorario" layoutX="17.0" layoutY="290.0" prefHeight="28.0" prefWidth="152.0" promptText="Horario" styleClass="textfield" />
+                                                <Label layoutX="15.0" layoutY="242.0" prefHeight="28.0" prefWidth="152.0" styleClass="textfield" text="Sexo" textFill="#0a0a0a9d" />
+                                                <RadioButton fx:id="OpcaoM" layoutX="56.0" layoutY="247.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="70.0" text="M" />
+                                                <RadioButton fx:id="OpcaoF" layoutX="106.0" layoutY="247.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="70.0" text="F" />
+                                                <ComboBox fx:id="cmbxEspecialidade" layoutX="176.0" layoutY="289.0" prefHeight="28.0" prefWidth="280.0" promptText="Especialidade" style="-fx-background-color: #e2dfdf;" styleClass="textfield" />
+                                                <Button layoutX="126.0" layoutY="408.0" mnemonicParsing="false" onAction="#Confirmar" prefHeight="36.0" prefWidth="152.0" styleClass="login-btn" text="Confirmar" />
+                                                <Button layoutX="292.0" layoutY="408.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: #e40f0f;" styleClass="login-btn" text="Cancelar" textFill="#e40f0f" />
+                                                <ImageView fitHeight="115.0" fitWidth="123.0" layoutX="14.0" layoutY="329.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../imagens/Logo_4-removebg.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <TextField fx:id="txtEndereco" layoutX="176.0" layoutY="336.0" prefHeight="28.0" prefWidth="280.0" promptText="Telefone" styleClass="textfield" text="Endereço" />
+                                                <Button layoutX="126.0" layoutY="472.0" mnemonicParsing="false" onAction="#Atualizar" prefHeight="36.0" prefWidth="152.0" styleClass="login-btn" text="Atualizar" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnRemov" layoutX="1188.0" layoutY="55.0" mnemonicParsing="false" onAction="#Remover" prefHeight="30.0" prefWidth="37.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+            <TableView fx:id="tabelaProfissionais" layoutX="541.0" layoutY="116.0" prefHeight="522.0" prefWidth="815.0" styleClass="textfield" stylesheets="@Menu.css">
+               <columns>
+                  <TableColumn fx:id="tabelaID" prefWidth="41.3333740234375" text="ID" />
+                  <TableColumn fx:id="tabelaNome" prefWidth="105.33331298828125" text="Nome" />
+                  <TableColumn fx:id="tabelaBi" prefWidth="115.33331298828125" text="BI" />
+                  <TableColumn fx:id="tabelaCargo" prefWidth="119.33331298828125" text="Cargo" />
+                  <TableColumn fx:id="tabelaEspecilidade" prefWidth="130.66680908203125" text="Especilidade" />
+                  <TableColumn fx:id="tabelaNascimento" prefWidth="122.666748046875" text="Nascimento" />
+                  <TableColumn fx:id="tabelaTelefone" prefWidth="177.33333333333337" text="Telefone" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="7.0" layoutY="678.0" prefHeight="40.0" prefWidth="1409.0" styleClass="let-form" stylesheets="@LoginDesign.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="1291.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.MenuControlador">
+   <children>
+      <BorderPane fx:id="MenuPane" layoutY="-1.0" prefHeight="650.0" prefWidth="1233.0" stylesheets="@Menu.css">
+         <center>
+            <AnchorPane prefHeight="650.0" prefWidth="1190.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="146.0" fitWidth="153.0" layoutX="347.0" layoutY="105.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imagens/Logo_4-removebg.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="787.0" fitWidth="1297.0" layoutY="-55.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imagens/R.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="bntHome" layoutX="24.0" layoutY="31.0" mnemonicParsing="false" onAction="#VoltarLogin" prefHeight="31.0" prefWidth="67.0" style="-fx-opacity: 0;" text="Button" />
+                  <Button fx:id="bntClose" cancelButton="true" defaultButton="true" disable="true" graphicTextGap="1.0" layoutX="968.0" layoutY="125.0" minWidth="42.0" mnemonicParsing="false" onAction="#Close" prefHeight="42.0" prefWidth="42.0" style="-fx-opacity: 0;" underline="true" />
+                  <AnchorPane layoutX="148.0" layoutY="47.0" opacity="0.75" prefHeight="40.0" prefWidth="967.0" styleClass="let-form" stylesheets="@Menu.css">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="15.0" layoutX="913.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="10.0">
+                           <image>
+                              <Image url="@../imagens/marca-cruzada.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="877.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="10.0">
+                           <image>
+                              <Image url="@../imagens/quadrado.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="bntCLose" layoutX="913.0" layoutY="2.0" minWidth="36.0" mnemonicParsing="false" onAction="#Close" prefHeight="36.0" prefWidth="36.0" style="-fx-opacity: 0; -fx-cursor: hand;" />
+                        <MenuButton fx:id="btnMenu" layoutX="15.0" layoutY="5.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="154.0" style="-fx-cursor: hand; -fx-background-color: fff;" styleClass="textfield" stylesheets="@Menu.css" text="MENU">
+                          <items>
+                              <MenuItem fx:id="bntDashboard" mnemonicParsing="false" onAction="#DashBoard" style="-fx-cursor: hand;" styleClass="textfield" text="        Dashboard        " />
+                            <MenuItem fx:id="bntAgenda" mnemonicParsing="false" onAction="#Agenda" style="-fx-cursor: hand;" styleClass="textfield" text="           Agenda" />
+                            <MenuItem fx:id="bntPacientes" mnemonicParsing="false" onAction="#Pacientes" style="-fx-cursor: hand;" styleClass="textfield" text="         Pacientes" />
+                              <MenuItem fx:id="bntProfissionais" mnemonicParsing="false" onAction="#Profissionais" style="-fx-cursor: hand;" styleClass="textfield" text="       Profissionais" />
+                              <MenuItem fx:id="btnDoctor" mnemonicParsing="false" onAction="#IrParaDoctor" style="-fx-cursor: hand;" styleClass="textfield" text="          Consulta" />
+                              <MenuItem mnemonicParsing="false" style="-fx-cursor: hand;" styleClass="textfield" text="        Atendente" />
+                              <MenuItem fx:id="btnEspecialidade" mnemonicParsing="false" onAction="#Especialidade" style="-fx-cursor: hand;" styleClass="textfield" text="    Especialidade" />
+                              <MenuItem fx:id="BntSair1" mnemonicParsing="false" onAction="#Sair" style="-fx-cursor: hand;" styleClass="textfield" text="             Sair" />
+                          </items>
+                        </MenuButton>
+                        <Label layoutX="468.0" layoutY="4.0" text="---WELCOME---">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="32.0" fitWidth="115.0" layoutX="110.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/lar.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="BntHome" layoutX="102.0" layoutY="48.0" minWidth="53.0" mnemonicParsing="false" onAction="#Home" prefHeight="38.0" prefWidth="53.0" style="-fx-opacity: 0; -fx-cursor: hand;" text="Button" />
+                  <ImageView fitHeight="156.0" fitWidth="176.0" layoutX="414.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/Logo_4-removebg.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
